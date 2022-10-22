@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": true,
+    "files.associations": {
+        "fstream": "cpp"
+    },
+    "cmake.configureOnOpen": true
+}

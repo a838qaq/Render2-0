@@ -1,0 +1,3 @@
+/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles/Render.dir
+/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles/edit_cache.dir
+/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles/rebuild_cache.dir
