@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Render.dir/src/Camera.o"
+  "CMakeFiles/Render.dir/src/Camera.o.d"
+  "CMakeFiles/Render.dir/src/Ray.o"
+  "CMakeFiles/Render.dir/src/Ray.o.d"
   "CMakeFiles/Render.dir/src/Vec3.o"
   "CMakeFiles/Render.dir/src/Vec3.o.d"
   "CMakeFiles/Render.dir/src/main.o"

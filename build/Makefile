@@ -130,6 +130,36 @@ Render/fast:
 .PHONY : Render/fast
 
 # target to build an object file
+src/Camera.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Camera.o
+.PHONY : src/Camera.o
+
+# target to preprocess a source file
+src/Camera.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Camera.i
+.PHONY : src/Camera.i
+
+# target to generate assembly for a file
+src/Camera.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Camera.s
+.PHONY : src/Camera.s
+
+# target to build an object file
+src/Ray.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Ray.o
+.PHONY : src/Ray.o
+
+# target to preprocess a source file
+src/Ray.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Ray.i
+.PHONY : src/Ray.i
+
+# target to generate assembly for a file
+src/Ray.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Ray.s
+.PHONY : src/Ray.s
+
+# target to build an object file
 src/Vec3.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Vec3.o
 .PHONY : src/Vec3.o
@@ -168,6 +198,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Render"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
+	@echo "... src/Ray.o"
+	@echo "... src/Ray.i"
+	@echo "... src/Ray.s"
 	@echo "... src/Vec3.o"
 	@echo "... src/Vec3.i"
 	@echo "... src/Vec3.s"

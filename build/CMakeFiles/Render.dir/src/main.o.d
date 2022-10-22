@@ -149,4 +149,6 @@ CMakeFiles/Render.dir/src/main.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.h
+ /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/Ray.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/Camera.h

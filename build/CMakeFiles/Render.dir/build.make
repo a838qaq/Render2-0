@@ -69,47 +69,79 @@ include CMakeFiles/Render.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Render.dir/flags.make
 
+CMakeFiles/Render.dir/src/Camera.o: CMakeFiles/Render.dir/flags.make
+CMakeFiles/Render.dir/src/Camera.o: ../src/Camera.cpp
+CMakeFiles/Render.dir/src/Camera.o: CMakeFiles/Render.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Render.dir/src/Camera.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Render.dir/src/Camera.o -MF CMakeFiles/Render.dir/src/Camera.o.d -o CMakeFiles/Render.dir/src/Camera.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Camera.cpp
+
+CMakeFiles/Render.dir/src/Camera.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Render.dir/src/Camera.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/z_8_3_8/桌面/Graphics/Render/src/Camera.cpp > CMakeFiles/Render.dir/src/Camera.i
+
+CMakeFiles/Render.dir/src/Camera.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Render.dir/src/Camera.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/z_8_3_8/桌面/Graphics/Render/src/Camera.cpp -o CMakeFiles/Render.dir/src/Camera.s
+
+CMakeFiles/Render.dir/src/Ray.o: CMakeFiles/Render.dir/flags.make
+CMakeFiles/Render.dir/src/Ray.o: ../src/Ray.cpp
+CMakeFiles/Render.dir/src/Ray.o: CMakeFiles/Render.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Render.dir/src/Ray.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Render.dir/src/Ray.o -MF CMakeFiles/Render.dir/src/Ray.o.d -o CMakeFiles/Render.dir/src/Ray.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp
+
+CMakeFiles/Render.dir/src/Ray.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Render.dir/src/Ray.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp > CMakeFiles/Render.dir/src/Ray.i
+
+CMakeFiles/Render.dir/src/Ray.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Render.dir/src/Ray.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp -o CMakeFiles/Render.dir/src/Ray.s
+
 CMakeFiles/Render.dir/src/Vec3.o: CMakeFiles/Render.dir/flags.make
 CMakeFiles/Render.dir/src/Vec3.o: ../src/Vec3.cpp
 CMakeFiles/Render.dir/src/Vec3.o: CMakeFiles/Render.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Render.dir/src/Vec3.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Render.dir/src/Vec3.o -MF CMakeFiles/Render.dir/src/Vec3.o.d -o CMakeFiles/Render.dir/src/Vec3.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Render.dir/src/Vec3.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Render.dir/src/Vec3.o -MF CMakeFiles/Render.dir/src/Vec3.o.d -o CMakeFiles/Render.dir/src/Vec3.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp
 
 CMakeFiles/Render.dir/src/Vec3.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Render.dir/src/Vec3.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp > CMakeFiles/Render.dir/src/Vec3.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp > CMakeFiles/Render.dir/src/Vec3.i
 
 CMakeFiles/Render.dir/src/Vec3.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Render.dir/src/Vec3.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp -o CMakeFiles/Render.dir/src/Vec3.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp -o CMakeFiles/Render.dir/src/Vec3.s
 
 CMakeFiles/Render.dir/src/main.o: CMakeFiles/Render.dir/flags.make
 CMakeFiles/Render.dir/src/main.o: ../src/main.cpp
 CMakeFiles/Render.dir/src/main.o: CMakeFiles/Render.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Render.dir/src/main.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Render.dir/src/main.o -MF CMakeFiles/Render.dir/src/main.o.d -o CMakeFiles/Render.dir/src/main.o -c /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Render.dir/src/main.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Render.dir/src/main.o -MF CMakeFiles/Render.dir/src/main.o.d -o CMakeFiles/Render.dir/src/main.o -c /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp
 
 CMakeFiles/Render.dir/src/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Render.dir/src/main.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp > CMakeFiles/Render.dir/src/main.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp > CMakeFiles/Render.dir/src/main.i
 
 CMakeFiles/Render.dir/src/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Render.dir/src/main.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp -o CMakeFiles/Render.dir/src/main.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp -o CMakeFiles/Render.dir/src/main.s
 
 # Object files for target Render
 Render_OBJECTS = \
+"CMakeFiles/Render.dir/src/Camera.o" \
+"CMakeFiles/Render.dir/src/Ray.o" \
 "CMakeFiles/Render.dir/src/Vec3.o" \
 "CMakeFiles/Render.dir/src/main.o"
 
 # External object files for target Render
 Render_EXTERNAL_OBJECTS =
 
+Render: CMakeFiles/Render.dir/src/Camera.o
+Render: CMakeFiles/Render.dir/src/Ray.o
 Render: CMakeFiles/Render.dir/src/Vec3.o
 Render: CMakeFiles/Render.dir/src/main.o
 Render: CMakeFiles/Render.dir/build.make
 Render: CMakeFiles/Render.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Render"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/z_8_3_8/桌面/Graphics/Render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Render"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Render.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
