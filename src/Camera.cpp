@@ -26,7 +26,7 @@ void Camera::Reset()
     camLowLeft = (position - (width.x * 0.5) * u * n - (height.y * 0.5) * v * n - w);
     // camLowLeft.z *= -1;
     // camLowLeft = -camLowLeft;
-    std::cout << camLowLeft.x << " " << camLowLeft.y << " " << camLowLeft.z << std::endl;
+    // std::cout << camLowLeft.x << " " << camLowLeft.y << " " << camLowLeft.z << std::endl;
 }
 
 Ray Camera::GetRay(double u, double v)

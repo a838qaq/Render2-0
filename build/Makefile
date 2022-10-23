@@ -175,6 +175,21 @@ src/HitableList.s:
 .PHONY : src/HitableList.s
 
 # target to build an object file
+src/Material.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Material.o
+.PHONY : src/Material.o
+
+# target to preprocess a source file
+src/Material.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Material.i
+.PHONY : src/Material.i
+
+# target to generate assembly for a file
+src/Material.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Material.s
+.PHONY : src/Material.s
+
+# target to build an object file
 src/Ray.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Ray.o
 .PHONY : src/Ray.o
@@ -252,6 +267,9 @@ help:
 	@echo "... src/HitableList.o"
 	@echo "... src/HitableList.i"
 	@echo "... src/HitableList.s"
+	@echo "... src/Material.o"
+	@echo "... src/Material.i"
+	@echo "... src/Material.s"
 	@echo "... src/Ray.o"
 	@echo "... src/Ray.i"
 	@echo "... src/Ray.s"

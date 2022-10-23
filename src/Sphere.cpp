@@ -10,6 +10,13 @@ Sphere::Sphere(Vec3 _center, double _R)
     R = _R;
 }
 
+Sphere::Sphere(Vec3 _center, double _R, Material *_pMaterial)
+{
+    center = _center;
+    R = _R;
+    pMaterial = _pMaterial;
+}
+
 bool Sphere::Hit(Ray ray, double tMin, double tMax, HitRecord &record) const
 {
     Vec3 OC = ray.origin - center;
@@ -19,6 +26,7 @@ bool Sphere::Hit(Ray ray, double tMin, double tMax, HitRecord &record) const
     double delta = b * b - 4 * a * c;
     if (delta > 0)
     {
+        record.pMar = pMaterial;
         double temp = (-b - sqrt(delta)) / (2 * a);
         if (temp < tMax && temp > tMin)
         {

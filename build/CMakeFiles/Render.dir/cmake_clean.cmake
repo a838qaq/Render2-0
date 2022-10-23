@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Render.dir/src/Hitable.o.d"
   "CMakeFiles/Render.dir/src/HitableList.o"
   "CMakeFiles/Render.dir/src/HitableList.o.d"
+  "CMakeFiles/Render.dir/src/Material.o"
+  "CMakeFiles/Render.dir/src/Material.o.d"
   "CMakeFiles/Render.dir/src/Ray.o"
   "CMakeFiles/Render.dir/src/Ray.o.d"
   "CMakeFiles/Render.dir/src/Sphere.o"

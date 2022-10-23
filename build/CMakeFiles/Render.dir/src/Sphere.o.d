@@ -150,6 +150,7 @@ CMakeFiles/Render.dir/src/Sphere.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /home/z_8_3_8/桌面/Graphics/Render/src/Ray.h \
  /home/z_8_3_8/桌面/Graphics/Render/src/Hitable.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/Material.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

@@ -188,4 +188,5 @@ CMakeFiles/Render.dir/src/main.o: \
  /home/z_8_3_8/桌面/Graphics/Render/src/Camera.h \
  /home/z_8_3_8/桌面/Graphics/Render/src/Sphere.h \
  /home/z_8_3_8/桌面/Graphics/Render/src/Hitable.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/Material.h \
  /home/z_8_3_8/桌面/Graphics/Render/src/HitableList.h

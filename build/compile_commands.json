@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Material.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Material.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Material.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
   "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Ray.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp",
   "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp"
 },
