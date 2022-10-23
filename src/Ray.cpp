@@ -8,3 +8,9 @@ Ray::Ray(Vec3 _origin, Vec3 _direction)
     origin = _origin;
     direction = _direction;
 }
+
+Vec3 Ray::GetEnd(double t)
+{
+    direction.Normalize();
+    return origin + t * direction;
+}

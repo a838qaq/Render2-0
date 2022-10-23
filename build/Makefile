@@ -145,6 +145,36 @@ src/Camera.s:
 .PHONY : src/Camera.s
 
 # target to build an object file
+src/Hitable.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Hitable.o
+.PHONY : src/Hitable.o
+
+# target to preprocess a source file
+src/Hitable.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Hitable.i
+.PHONY : src/Hitable.i
+
+# target to generate assembly for a file
+src/Hitable.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Hitable.s
+.PHONY : src/Hitable.s
+
+# target to build an object file
+src/HitableList.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/HitableList.o
+.PHONY : src/HitableList.o
+
+# target to preprocess a source file
+src/HitableList.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/HitableList.i
+.PHONY : src/HitableList.i
+
+# target to generate assembly for a file
+src/HitableList.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/HitableList.s
+.PHONY : src/HitableList.s
+
+# target to build an object file
 src/Ray.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Ray.o
 .PHONY : src/Ray.o
@@ -158,6 +188,21 @@ src/Ray.i:
 src/Ray.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Ray.s
 .PHONY : src/Ray.s
+
+# target to build an object file
+src/Sphere.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Sphere.o
+.PHONY : src/Sphere.o
+
+# target to preprocess a source file
+src/Sphere.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Sphere.i
+.PHONY : src/Sphere.i
+
+# target to generate assembly for a file
+src/Sphere.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Render.dir/build.make CMakeFiles/Render.dir/src/Sphere.s
+.PHONY : src/Sphere.s
 
 # target to build an object file
 src/Vec3.o:
@@ -201,9 +246,18 @@ help:
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
+	@echo "... src/Hitable.o"
+	@echo "... src/Hitable.i"
+	@echo "... src/Hitable.s"
+	@echo "... src/HitableList.o"
+	@echo "... src/HitableList.i"
+	@echo "... src/HitableList.s"
 	@echo "... src/Ray.o"
 	@echo "... src/Ray.i"
 	@echo "... src/Ray.s"
+	@echo "... src/Sphere.o"
+	@echo "... src/Sphere.i"
+	@echo "... src/Sphere.s"
 	@echo "... src/Vec3.o"
 	@echo "... src/Vec3.i"
 	@echo "... src/Vec3.s"

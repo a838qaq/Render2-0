@@ -3,7 +3,8 @@
     "editor.formatOnPaste": false,
     "editor.formatOnType": true,
     "files.associations": {
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "ostream": "cpp"
     },
     "cmake.configureOnOpen": true
 }

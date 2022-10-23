@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Camera.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Camera.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Camera.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Hitable.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Hitable.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Hitable.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/HitableList.o -c /home/z_8_3_8/桌面/Graphics/Render/src/HitableList.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/HitableList.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Ray.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Sphere.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Sphere.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Sphere.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/Vec3.o -c /home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp"
+},
+{
+  "directory": "/home/z_8_3_8/桌面/Graphics/Render/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/Render.dir/src/main.o -c /home/z_8_3_8/桌面/Graphics/Render/src/main.cpp",
+  "file": "/home/z_8_3_8/桌面/Graphics/Render/src/main.cpp"
+}
+]

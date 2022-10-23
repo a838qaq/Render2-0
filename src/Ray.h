@@ -10,5 +10,6 @@ public:
 public:
     Ray();
     Ray(Vec3 _origin, Vec3 _direction);
+    Vec3 GetEnd(double t);
     ~Ray();
 };

@@ -16,16 +16,17 @@ void Camera::Reset()
     width.x = 4;
     position = Vec3(0, 0, 0);
     direction = Vec3(0, 0, -1);
-    head = Vec3(0, -1, 0);
-    Vec3 w = position - direction;
+    head = Vec3(0, 1, 0);
+    Vec3 w = -direction;
     w.Normalize();
     Vec3 u = head.Cross(w);
     u.Normalize();
     Vec3 v = w.Cross(u);
     v.Normalize();
     camLowLeft = (position - (width.x * 0.5) * u * n - (height.y * 0.5) * v * n - w);
-    camLowLeft.z *= -1;
-    camLowLeft = -camLowLeft;
+    // camLowLeft.z *= -1;
+    // camLowLeft = -camLowLeft;
+    std::cout << camLowLeft.x << " " << camLowLeft.y << " " << camLowLeft.z << std::endl;
 }
 
 Ray Camera::GetRay(double u, double v)
