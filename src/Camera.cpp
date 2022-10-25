@@ -31,5 +31,5 @@ void Camera::Reset()
 
 Ray Camera::GetRay(double u, double v)
 {
-    return Ray(position, camLowLeft + u * width + v * height);
+    return Ray(position, camLowLeft + u * width + v * height, 1);
 }

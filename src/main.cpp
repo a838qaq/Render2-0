@@ -8,6 +8,8 @@
 #include "Sphere.h"
 #include "HitableList.h"
 #include "Hitable.h"
+#define MAX_DEPTH 100 // max of tracing depth
+
 using namespace std;
 
 inline Vec3 GetColor(Ray, Hitable *world, int depth);
@@ -17,7 +19,7 @@ inline double Random();
 int main()
 {
     int nx = 1000, ny = 500; // photo's width and height
-    int sampleTimes = 100;   // sample time per pix
+    int sampleTimes = 50;    // sample time per pix
     int objNumber = 4;
 
     // init for .ppm
@@ -27,13 +29,14 @@ int main()
     out << nx << " " << ny << endl;
     out << "255" << endl;
 
+    // creat object
     Camera camera;
     camera.Reset();
     Hitable *list[objNumber];
     list[0] = new Sphere(Vec3(0, 0, -1), 0.5, new Lambertain((Vec3(0.8, 0.3, 0.3))));
     list[1] = new Sphere(Vec3(0, -100.5, -1), 100, new Lambertain((Vec3(1, 0, 0))));
     list[2] = new Sphere(Vec3(1, 0, -1), 0.5, new Metal(Vec3(0.8, 0.6, 0.2), 0.1));
-    list[3] = new Sphere(Vec3(-1, 0, -1), 0.5, new Metal(Vec3(0.8, 0.8, 0.8), 0.5));
+    list[3] = new Sphere(Vec3(-1, 0, -1), 0.5, new Glass(Vec3(1, 1, 1), 1.5));
     Hitable *worldObj = new HitableList(list, objNumber);
 
     srand(time(NULL));
@@ -44,7 +47,7 @@ int main()
             Vec3 color(0, 0, 0);
             for (int i = 0; i < sampleTimes; i++)
             {
-                double U = (x + Random()) / nx;
+                double U = (x + Random()) / nx; // random for AA
                 double V = (y + Random()) / ny;
                 Ray R = camera.GetRay(U, V);
                 color = color + GetColor(R, worldObj, 0);
@@ -71,25 +74,27 @@ inline Vec3 GetColor(Ray ray, Hitable *world, int depth)
     {
         Ray scattered;    // difuse light
         Vec3 attunuation; // fade rate
-        if (depth < 50 && tempRecord.pMar->Scatter(ray, tempRecord, attunuation, scattered))
+        if (depth < MAX_DEPTH && tempRecord.pMar->Scatter(ray, tempRecord, attunuation, scattered))
         {
             return attunuation * GetColor(scattered, world, depth + 1);
         }
         else
         {
-            return Vec3(0, 0, 0);
+            return Vec3(0, 0.8, 0);
         }
     }
     else
     {
+        // background color
         ray.direction.Normalize();
         double t = 0.5 * (ray.direction.y + 1);
         return (1 - t) * Vec3(1, 1, 1) + t * Vec3(0.5, 0.7, 1);
+        // return Vec3(0.3, 0, 0);
     }
 }
 inline double Random()
 {
-    return (rand() % 1000) / 1000.0;
+    return (rand() % 100000) / 100000.0;
 }
 
 inline Vec3 GetRandomDirection()
