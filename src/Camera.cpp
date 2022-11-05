@@ -14,6 +14,8 @@ void Camera::Reset()
 {
     height.y = 2;
     width.x = 4;
+    n = 1;
+    n = 1 / n;
     position = Vec3(0, 0, 0);
     direction = Vec3(0, 0, -1);
     head = Vec3(0, 1, 0);
@@ -31,5 +33,5 @@ void Camera::Reset()
 
 Ray Camera::GetRay(double u, double v)
 {
-    return Ray(position, camLowLeft + u * width + v * height, 1);
+    return Ray(position, camLowLeft + u * width * n + v * height * n, 1);
 }

@@ -40,6 +40,16 @@ void Vec3::Normalize()
     z /= l;
 }
 
+void Vec3::ColorNormalize()
+{
+    x = x > 1 ? 1 : x < 0 ? 0
+                          : x;
+    y = y > 1 ? 1 : y < 0 ? 0
+                          : y;
+    z = z > 1 ? 1 : z < 0 ? 0
+                          : z;
+}
+
 Vec3 operator+(Vec3 v1, Vec3 v2)
 {
     return Vec3(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);

@@ -11,7 +11,7 @@ public:
     Vec3 camLowLeft;
     Vec3 height;
     Vec3 width;
-    double n = 1;
+    double n;
 
 public:
     Camera();

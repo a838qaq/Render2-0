@@ -18,6 +18,7 @@ public:
     double Dot(Vec3 v);
     Vec3 Cross(Vec3 v);
     void Normalize();
+    void ColorNormalize();
     friend Vec3 operator+(Vec3 v1, Vec3 v2);
     friend Vec3 operator*(Vec3 v1, Vec3 v2);
     friend Vec3 operator-(Vec3 v1, Vec3 v2);

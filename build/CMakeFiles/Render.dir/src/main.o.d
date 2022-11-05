@@ -34,8 +34,9 @@ CMakeFiles/Render.dir/src/main.o: \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/new /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/move.h /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits \
+ /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -189,4 +190,18 @@ CMakeFiles/Render.dir/src/main.o: \
  /home/z_8_3_8/桌面/Graphics/Render/src/Sphere.h \
  /home/z_8_3_8/桌面/Graphics/Render/src/Hitable.h \
  /home/z_8_3_8/桌面/Graphics/Render/src/Material.h \
- /home/z_8_3_8/桌面/Graphics/Render/src/HitableList.h
+ /home/z_8_3_8/桌面/Graphics/Render/src/HitableList.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/../json/Scanner.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/../json/Parser.h \
+ /home/z_8_3_8/桌面/Graphics/Render/src/../json/JsonElement.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
+ /home/z_8_3_8/桌面/Graphics/Render/src/../json/Error.h

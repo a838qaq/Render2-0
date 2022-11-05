@@ -1,0 +1,139 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+						"E:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc",
+						"E:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/lib",
+						"E:/QTT/Tools/mingw1120_64/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"mingw32",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"kernel32",
+						"pthread",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"iconv",
+						"mingw32",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"kernel32"
+					]
+				},
+				"path" : "E:/QTT/Tools/mingw1120_64/bin/gcc.exe",
+				"version" : "11.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+						"E:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"E:/QTT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0",
+						"E:/QTT/Tools/mingw1120_64/lib/gcc",
+						"E:/QTT/Tools/mingw1120_64/x86_64-w64-mingw32/lib",
+						"E:/QTT/Tools/mingw1120_64/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"mingw32",
+						"gcc_s",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"kernel32",
+						"pthread",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"iconv",
+						"mingw32",
+						"gcc_s",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"kernel32"
+					]
+				},
+				"path" : "E:/QTT/Tools/mingw1120_64/bin/g++.exe",
+				"version" : "11.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "C:/Program Files/mingw-w64/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

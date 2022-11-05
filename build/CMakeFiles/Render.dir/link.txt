@@ -1,1 +1,3 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/Render.dir/src/Camera.o CMakeFiles/Render.dir/src/Hitable.o CMakeFiles/Render.dir/src/HitableList.o CMakeFiles/Render.dir/src/Material.o CMakeFiles/Render.dir/src/Ray.o CMakeFiles/Render.dir/src/Sphere.o CMakeFiles/Render.dir/src/Vec3.o CMakeFiles/Render.dir/src/main.o -o Render 
+"C:\Program Files (x86)\cmake\bin\cmake.exe" -E rm -f CMakeFiles\Render.dir/objects.a
+E:\QTT\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\Render.dir/objects.a @CMakeFiles\Render.dir\objects1.rsp
+E:\QTT\Tools\mingw1120_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Render.dir/objects.a -Wl,--no-whole-archive -o Render.exe -Wl,--out-implib,libRender.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Render.dir\linklibs.rsp

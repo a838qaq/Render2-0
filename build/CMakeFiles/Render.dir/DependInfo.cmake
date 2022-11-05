@@ -8,14 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/z_8_3_8/桌面/Graphics/Render/src/Camera.cpp" "CMakeFiles/Render.dir/src/Camera.o" "gcc" "CMakeFiles/Render.dir/src/Camera.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/Hitable.cpp" "CMakeFiles/Render.dir/src/Hitable.o" "gcc" "CMakeFiles/Render.dir/src/Hitable.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/HitableList.cpp" "CMakeFiles/Render.dir/src/HitableList.o" "gcc" "CMakeFiles/Render.dir/src/HitableList.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/Material.cpp" "CMakeFiles/Render.dir/src/Material.o" "gcc" "CMakeFiles/Render.dir/src/Material.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/Ray.cpp" "CMakeFiles/Render.dir/src/Ray.o" "gcc" "CMakeFiles/Render.dir/src/Ray.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/Sphere.cpp" "CMakeFiles/Render.dir/src/Sphere.o" "gcc" "CMakeFiles/Render.dir/src/Sphere.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/Vec3.cpp" "CMakeFiles/Render.dir/src/Vec3.o" "gcc" "CMakeFiles/Render.dir/src/Vec3.o.d"
-  "/home/z_8_3_8/桌面/Graphics/Render/src/main.cpp" "CMakeFiles/Render.dir/src/main.o" "gcc" "CMakeFiles/Render.dir/src/main.o.d"
+  "E:/Graphics/Render/json/Parser.cpp" "CMakeFiles/Render.dir/json/Parser.obj" "gcc" "CMakeFiles/Render.dir/json/Parser.obj.d"
+  "E:/Graphics/Render/json/Scanner.cpp" "CMakeFiles/Render.dir/json/Scanner.obj" "gcc" "CMakeFiles/Render.dir/json/Scanner.obj.d"
+  "E:/Graphics/Render/src/Camera.cpp" "CMakeFiles/Render.dir/src/Camera.obj" "gcc" "CMakeFiles/Render.dir/src/Camera.obj.d"
+  "E:/Graphics/Render/src/Hitable.cpp" "CMakeFiles/Render.dir/src/Hitable.obj" "gcc" "CMakeFiles/Render.dir/src/Hitable.obj.d"
+  "E:/Graphics/Render/src/HitableList.cpp" "CMakeFiles/Render.dir/src/HitableList.obj" "gcc" "CMakeFiles/Render.dir/src/HitableList.obj.d"
+  "E:/Graphics/Render/src/Material.cpp" "CMakeFiles/Render.dir/src/Material.obj" "gcc" "CMakeFiles/Render.dir/src/Material.obj.d"
+  "E:/Graphics/Render/src/Ray.cpp" "CMakeFiles/Render.dir/src/Ray.obj" "gcc" "CMakeFiles/Render.dir/src/Ray.obj.d"
+  "E:/Graphics/Render/src/Sphere.cpp" "CMakeFiles/Render.dir/src/Sphere.obj" "gcc" "CMakeFiles/Render.dir/src/Sphere.obj.d"
+  "E:/Graphics/Render/src/Vec3.cpp" "CMakeFiles/Render.dir/src/Vec3.obj" "gcc" "CMakeFiles/Render.dir/src/Vec3.obj.d"
+  "E:/Graphics/Render/src/main.cpp" "CMakeFiles/Render.dir/src/main.obj" "gcc" "CMakeFiles/Render.dir/src/main.obj.d"
   )
 
 # Targets to which this target links.
