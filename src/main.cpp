@@ -8,16 +8,14 @@
 #include "Sphere.h"
 #include "HitableList.h"
 #include "Hitable.h"
-#include "../json/Scanner.h"
-#include "../json/Parser.h"
 #define MAX_DEPTH 100 // max of tracing depth
 
 using namespace std;
-using namespace civitasv::json;
 
 inline Vec3 GetColor(Ray, Hitable *world, int depth);
 inline Vec3 GetRandomDirection();
 inline double Random();
+inline Vec3 GammaCorrect(Vec3 color, double gamma = 2.2);
 
 int main(int argc, char *argv[])
 {
@@ -30,15 +28,6 @@ int main(int argc, char *argv[])
     {
         sampleTimes = 10;
     }
-
-    // read json
-    string source = GetJsonString("../RenderConfig.json");
-    Scanner scanner(source);
-    Parser parser(scanner);
-
-    // test
-    JsonElement *elm = parser.Parse();
-    cout << elm->Dumps() << endl;
 
     int nx = 1000, ny = 500; // photo's width and height
     int objNumber = 7;
@@ -57,7 +46,7 @@ int main(int argc, char *argv[])
     camera.Reset();
     Hitable *list[objNumber];
 
-    list[0] = new Sphere(Vec3(0, -0.2, -1.5), 0.3, new Lambertain(Vec3(0.8, 0.3, 0.3)));
+    list[0] = new Sphere(Vec3(0, -0.2, -1.5), 0.3, new Glass(Vec3(0.8, 0.3, 0.3), 1.2));
     // list[8] = new Sphere(Vec3(-0.8, 0.2, -1), 0.7, new Glass(Vec3(0.6, 0.8, 0.8), 0));
     // list[7] = new Sphere(Vec3(0.7, 0, -0.5), 0.5, new Glass(Vec3(0.8, 0.6, 0.2), 0.2));
     list[1] = new Sphere(Vec3(0, 5.4, -1), 3, new Light(Vec3(100, 100, 100)));
@@ -91,6 +80,9 @@ int main(int argc, char *argv[])
                 color = color + tClolor;
             }
             color = color / sampleTimes;
+
+            color = GammaCorrect(color);
+
             double r = color.x;
             double g = color.y;
             double b = color.z;
@@ -149,4 +141,12 @@ inline Vec3 GetRandomDirection()
     P.Normalize();
 
     return P;
+}
+
+inline Vec3 GammaCorrect(Vec3 color, double gamma)
+{
+    color.x = pow(color.x, 1.0 / gamma);
+    color.y = pow(color.y, 1.0 / gamma);
+    color.z = pow(color.z, 1.0 / gamma);
+    return color;
 }

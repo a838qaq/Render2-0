@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\cmake\bin\cmake.exe" -E rm -f CMakeFiles\Render.dir/objects.a
-E:\QTT\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\Render.dir/objects.a @CMakeFiles\Render.dir\objects1.rsp
-E:\QTT\Tools\mingw1120_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Render.dir/objects.a -Wl,--no-whole-archive -o Render.exe -Wl,--out-implib,libRender.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Render.dir\linklibs.rsp
