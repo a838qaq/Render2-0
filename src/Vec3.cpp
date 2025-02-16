@@ -1,7 +1,12 @@
 #include "Vec3.h"
 #include <cmath>
 
-Vec3::Vec3() {}
+Vec3::Vec3()
+{
+    this->x = 0;
+    this->y = 0;
+    this->z = 0;
+}
 
 Vec3::Vec3(double _x, double _y, double _z)
 {

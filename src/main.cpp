@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     }
 
     int nx = 1000, ny = 500; // photo's width and height
-    int objNumber = 7;
+    int objNumber = 8;
     int ty = 0.01 * ny;
     int count = 1;
 
@@ -46,12 +46,14 @@ int main(int argc, char *argv[])
     camera.Reset();
     Hitable *list[objNumber];
 
-    list[0] = new Sphere(Vec3(0, -0.2, -1.5), 0.3, new Glass(Vec3(0.8, 0.3, 0.3), 1.2));
+    list[0] = new Sphere(Vec3(0.3, -0.2, -1.7), 0.3, new Lambertain(Vec3(0.0, 0.0, 0.1)));
+    // list[8] = new Sphere(Vec3(0.3, 2, -1.5), 1.5, new Light(Vec3(10000, 10000, 10000)));
+    list[7] = new Sphere(Vec3(-0.5, 0.1, -2.5), 0.6, new Metal(Vec3(0.3, 0.3, 0.3), 0.1));
     // list[8] = new Sphere(Vec3(-0.8, 0.2, -1), 0.7, new Glass(Vec3(0.6, 0.8, 0.8), 0));
     // list[7] = new Sphere(Vec3(0.7, 0, -0.5), 0.5, new Glass(Vec3(0.8, 0.6, 0.2), 0.2));
-    list[1] = new Sphere(Vec3(0, 5.4, -1), 3, new Light(Vec3(100, 100, 100)));
+    list[1] = new Sphere(Vec3(0, 5.4, -1), 3, new Light(Vec3(500, 500, 500)));
     list[2] = new Sphere(Vec3(0, -100.5, -1), 100, new Lambertain(Vec3(0.8, 0.8, 0.8))); // ground
-    list[3] = new Sphere(Vec3(0, 102.5, -1), 100, new Lambertain(Vec3(0.8, 0.8, 0.8)));  // roof
+    list[3] = new Sphere(Vec3(0, 102.5, -1), 100, new Light(Vec3(500, 500, 500)));       // roof
     list[4] = new Sphere(Vec3(0, 1, -103), 100, new Lambertain(Vec3(0.8, 0.8, 0.8)));    // back
     list[5] = new Sphere(Vec3(-101.5, 0, -1), 100, new Lambertain(Vec3(0.6, 0.0, 0.0))); // right
     list[6] = new Sphere(Vec3(101.5, 0, -1), 100, new Lambertain(Vec3(0.0, 0.6, 0.0)));  // left */

@@ -9,7 +9,7 @@ public:
 
 public:
     Vec3();
-    Vec3(double _x = 0, double _y = 0, double _z = 0);
+    Vec3(double _x, double _y, double _z);
     ~Vec3();
     Vec3 operator+() { return *this; };
     Vec3 operator-() { return Vec3(-x, -y, -z); };

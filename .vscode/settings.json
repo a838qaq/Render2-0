@@ -1,5 +1,5 @@
 {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnPaste": false,
     "editor.formatOnType": true,
     "files.associations": {
@@ -54,7 +54,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "ios": "cpp"
     },
     "cmake.configureOnOpen": true
 }
