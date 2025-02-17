@@ -8,6 +8,7 @@
 #include "Sphere.h"
 #include "HitableList.h"
 #include "Hitable.h"
+#include "ThreadPool.h"
 #define MAX_DEPTH 100 // max of tracing depth
 
 using namespace std;
@@ -16,9 +17,18 @@ inline Vec3 GetColor(Ray, Hitable *world, int depth);
 inline Vec3 GetRandomDirection();
 inline double Random();
 inline Vec3 GammaCorrect(Vec3 color, double gamma = 2.2);
+inline Vec3 RenderRow(const Camera camera, Hitable *worldObj, const int x, const int y, const int nx, const int ny);
+
+int test(int x, int y)
+{
+    return x + y;
+}
 
 int main(int argc, char *argv[])
 {
+    ThreadPool threadPool;
+    vector<future<Vec3>> res;
+
     int sampleTimes; // sampletimes per pix
     if (argc == 2)
     {
@@ -74,15 +84,15 @@ int main(int argc, char *argv[])
             Vec3 color(0, 0, 0);
             for (int i = 0; i < sampleTimes; i++)
             {
-                double U = (x + Random()) / nx; // random for AA
-                double V = (y + Random()) / ny;
-                Ray R = camera.GetRay(U, V);
-                Vec3 tClolor = GetColor(R, worldObj, 0);
-                tClolor.ColorNormalize();
-                color = color + tClolor;
+                res.emplace_back(threadPool.AddTask(RenderRow, camera, worldObj, x, y, nx, ny));
             }
-            color = color / sampleTimes;
+            for (auto &it : res)
+            {
+                color = color + it.get();
+            }
+            res.clear();
 
+            color = color / sampleTimes;
             color = GammaCorrect(color);
 
             double r = color.x;
@@ -96,6 +106,16 @@ int main(int argc, char *argv[])
         }
     }
     return 0;
+}
+
+inline Vec3 RenderRow(const Camera camera, Hitable *worldObj, const int x, const int y, const int nx, const int ny)
+{
+    double U = (x + Random()) / nx; // random for AA
+    double V = (y + Random()) / ny;
+    Ray R = camera.GetRay(U, V);
+    Vec3 tClolor = GetColor(R, worldObj, 0);
+    tClolor.ColorNormalize();
+    return tClolor;
 }
 
 inline Vec3 GetColor(Ray ray, Hitable *world, int depth)

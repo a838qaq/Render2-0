@@ -1,5 +1,6 @@
 #include "ThreadPool.h"
-#include<functional>
+#include <functional>
+#include <iostream>
 using namespace std;
 
 ThreadPool::ThreadPool(int min, int max) : m_maxThread(max), m_minThread(min), m_stop(false), m_idleThread(min), m_curThread(min)
@@ -8,14 +9,34 @@ ThreadPool::ThreadPool(int min, int max) : m_maxThread(max), m_minThread(min), m
     m_manager = new thread(&ThreadPool::manager, this);
 
     // 创建工作线程
-    for (int i = 0; i < min; i++)
+    for (int i = 0; i < max; i++)
     {
         thread t(&ThreadPool::worker, this);
-        m_workers[t.get_id()] =  move(t);
+        // cout << "线程 " <<t.get_id()<<" 被创建"<<endl;
+        m_workers[t.get_id()] = std::move(t);
     }
 }
 
-void ThreadPool::AddTask(function<void(void)> task)
+ThreadPool::~ThreadPool()
+{
+    m_stop = true;
+    m_condition.notify_all();
+    for (auto &it : m_workers)
+    {
+        thread &t = it.second;
+        if (t.joinable())
+        {
+            t.join();
+        }
+    }
+    if (m_manager->joinable())
+    {
+        m_manager->join();
+    }
+    delete m_manager;
+}
+
+void ThreadPool::AddTask(std::function<void(void)> task)
 {
     {
         // 线程同步
@@ -56,7 +77,7 @@ void ThreadPool::manager()
         else if (idel == 0 && cur < m_maxThread)
         {
             thread t(&ThreadPool::worker, this);
-            m_workers[t.get_id()] =  move(t);
+            m_workers[t.get_id()] = std::move(t);
             m_curThread++;
             m_idleThread++;
         }
@@ -76,9 +97,11 @@ void ThreadPool::worker()
                 if (m_exitThread.load() > 0)
                 {
                     m_curThread--;
+                    m_idleThread--;
                     m_exitThread--;
                     // 线程退出
                     lock_guard<mutex> lck(m_idsMutex);
+                    // std::cout << "线程退出 id："<<this_thread::get_id()<<endl;
                     m_ids.emplace_back(this_thread::get_id());
                     return;
                 }
@@ -87,7 +110,7 @@ void ThreadPool::worker()
             // 取任务
             if (!m_tasks.empty())
             {
-                task = move(m_tasks.front());
+                task = std::move(m_tasks.front());
                 m_tasks.pop();
             }
         }
